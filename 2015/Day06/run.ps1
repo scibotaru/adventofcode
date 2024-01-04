@@ -65,7 +65,6 @@ foreach ($in in $input.Split('`r`n')) {
             $coordinates = $in.Remove(0, 7).Split(' ')
             switcher1 -value 2 -c1 ($coordinates[0].split(',')) -c2 ($coordinates[2].split(','))
             switcher2 -value 2 -c1 ($coordinates[0].split(',')) -c2 ($coordinates[2].split(','))
-
         }
         default {
             'unknown'
